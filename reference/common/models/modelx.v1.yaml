@@ -1,0 +1,7 @@
+title: modelX
+type: object
+properties:
+  id:
+    type: string
+  Yattr:
+    $ref: ./modely.v1.yaml

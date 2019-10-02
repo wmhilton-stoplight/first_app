@@ -1,0 +1,7 @@
+title: ModelY
+type: object
+properties:
+  id:
+    type: string
+  attr:
+    type: string
