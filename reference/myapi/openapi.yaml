@@ -27,5 +27,7 @@ paths:
           application/json:
             schema:
               $ref: ../common/models/modely.v1.yaml
+        description: |
+          A test request
 components:
   schemas: {}
