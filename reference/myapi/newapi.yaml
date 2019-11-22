@@ -1,0 +1,32 @@
+swagger: '2.0'
+info:
+  title: newapi.yaml
+  version: '1.0'
+  description: |
+    my new api
+host: 'localhost:3000'
+schemes:
+  - http
+produces:
+  - application/json
+consumes:
+  - application/json
+paths:
+  /get/user:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: 'http://stoplight-backend.oc.stoplight-dev.com/nodes.raw?srn=gh/collinbachi/first_app/reference/myapi/openapi.yaml/components/schemas/user'
+      parameters:
+        - in: body
+          name: body
+          schema:
+            type: object
+            properties:
+              id:
+                type: string
+definitions: {}
