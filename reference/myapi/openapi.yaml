@@ -15,19 +15,56 @@ paths:
           content:
             application/json:
               schema:
-                $ref: ../common/models/modelx.v1.yaml
+                title: modelX
+                type: object
+                properties:
+                  id:
+                    type: string
+                  Yattr:
+                    title: ModelY
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      attr:
+                        type: string
               examples: {}
             application/xml:
               schema:
-                $ref: ../common/models/modelx.v1.yaml
+                title: modelX
+                type: object
+                properties:
+                  id:
+                    type: string
+                  Yattr:
+                    title: ModelY
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      attr:
+                        type: string
               examples:
                 example-1: {}
       requestBody:
         content:
           application/json:
             schema:
-              $ref: ../common/models/modely.v1.yaml
+              title: ModelY
+              type: object
+              properties:
+                id:
+                  type: string
+                attr:
+                  type: string
         description: |
           A test request
 components:
-  schemas: {}
+  schemas:
+    user:
+      title: user
+      type: object
+      properties:
+        id:
+          type: string
+      description: a user
